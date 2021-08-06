@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/main.css">
+  <title>
+    <%= title %>
+  </title>
+</head>
+
+<body>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/secure">Secure</a></li>
+    <li class="auth"><a href="/auth/register">Register</a></li>
+    <li class="auth"><a href="/auth/login">Login</a></li>
+    <li class="auth"><a href="/auth/logout">Logout</a></li>
+  </ul>
+  <div class="welcome">
+    <h3>
+      <%= title %>
+    </h3>
+    <form action="<%= route %>" method="post">
+      Username<br /><input type="text" name="username" required>
+      <br />
+      Password<br /><input type="password" name="password" required>
+      <br />
+      <input type="submit" value="<%= title %>">
+    </form>
+  </div>
+</body>
+
+</html>

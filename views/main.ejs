@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/main.css">
+  <title>
+    <%= title %>
+  </title>
+</head>
+
+<body>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/secure">Secure</a></li>
+    <li class="auth"><a href="/auth/register">Register</a></li>
+    <li class="auth"><a href="/auth/login">Login</a></li>
+    <li class="auth"><a href="/auth/logout">Logout</a></li>
+  </ul>
+  <div class="welcome">
+    <h2>
+      Welcome to "<%= title %>"
+    </h2>
+    <p>
+      A regular "<%= title %>" page...
+    </p>
+  </div>
+</body>
+
+</html>

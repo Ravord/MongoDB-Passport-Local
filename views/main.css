@@ -1,0 +1,53 @@
+body {
+  background-color: hsl(200, 50%, 50%);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+  ul {
+    justify-content: center;
+  }
+}
+
+ul {
+  background-color: hsl(200, 75%, 25%);
+  border-radius: 1rem;
+  display: flex;
+  flex-flow: row wrap;
+  list-style-type: none;
+  margin-top: 0;
+  padding: 1.25rem;
+}
+
+ul li {
+  background-color: hsl(200, 50%, 50%);
+  margin: 0.5rem;
+  padding: 1rem;
+}
+
+ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+ul li a:active {
+  color: hsl(200, 75%, 25%);
+}
+
+ul li.auth {
+  background-color: hsl(0, 50%, 50%);
+}
+
+ul li.auth a:active {
+  color: hsl(0, 75%, 25%);
+}
+
+div.welcome {
+  align-items: center;
+  color: white;
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+  text-shadow: black 0.15rem 0.15rem;
+}
