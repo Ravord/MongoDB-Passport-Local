@@ -21,14 +21,13 @@ passport.use(new localStrategy(async (username, password, done) => {
 passport.serializeUser((user, done) => {
   done(null, user.id)
 })
-passport.deserializeUser((userID, done) => {
-  User
-    .findById(userID)
-    .then((user) => {
-      done(null, user)
-    })
-    .catch((err) => {
-      done(err, false)
-    })
+passport.deserializeUser(async (userID, done) => {
+  try {
+    let foundUser = await User.findById(userID)
+    done(null, foundUser)
+  }
+  catch (err) {
+    done(err, false)
+  }
 })
 module.exports = passport
