@@ -14,7 +14,7 @@ app.use(express.static(__dirname + '/views'))
 app.use(express.urlencoded({ extended: true }))
 app.use(session({
   cookie: {
-    maxAge: 1000 * 60 * 60 * 24 * 28 // 4 weeks
+    maxAge: 1000 * 60
   },
   resave: false,
   saveUninitialized: false,
